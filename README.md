@@ -1,1 +1,1 @@
-# homebrew-tap
+# Pinax Homebrew Tap
