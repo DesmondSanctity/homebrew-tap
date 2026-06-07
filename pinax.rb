@@ -5,21 +5,21 @@
 class Pinax < Formula
   desc "Turn any documentation site into a local MCP server."
   homepage "https://github.com/desmondsanctity/pinax"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/DesmondSanctity/pinax/releases/download/v0.2.1/pinax_0.2.1_Darwin_x86_64.tar.gz"
-      sha256 "d1813e971870859021f1f56009f2452679df83108673357ff38e4be9935ad15e"
+      url "https://github.com/DesmondSanctity/pinax/releases/download/v0.2.2/pinax_0.2.2_Darwin_x86_64.tar.gz"
+      sha256 "a729e155af3a1137da91eaf1b1aabfc4077c1b01832da0f904419a7d47f7dfbd"
 
       define_method(:install) do
         bin.install "pinax"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/DesmondSanctity/pinax/releases/download/v0.2.1/pinax_0.2.1_Darwin_arm64.tar.gz"
-      sha256 "09253d4dd50fe381618c6b4dbbe8542bac32b82064d51088d2082f354ed07bad"
+      url "https://github.com/DesmondSanctity/pinax/releases/download/v0.2.2/pinax_0.2.2_Darwin_arm64.tar.gz"
+      sha256 "c9caccdf6faffeec7e8b203b04992f44bb13a6f1a58b08c5c56e4fb91de855a7"
 
       define_method(:install) do
         bin.install "pinax"
@@ -29,15 +29,15 @@ class Pinax < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/DesmondSanctity/pinax/releases/download/v0.2.1/pinax_0.2.1_Linux_x86_64.tar.gz"
-      sha256 "97fd9e48f4a21e6f4c6cfbaaf99d4924f2087714a054098d48735201bdbb0223"
+      url "https://github.com/DesmondSanctity/pinax/releases/download/v0.2.2/pinax_0.2.2_Linux_x86_64.tar.gz"
+      sha256 "16a7042bb6679c7a61357e6a5570e6437dd05e03675f1e6c5b5bac3ca52633e5"
       define_method(:install) do
         bin.install "pinax"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/DesmondSanctity/pinax/releases/download/v0.2.1/pinax_0.2.1_Linux_arm64.tar.gz"
-      sha256 "aa7402f2340815eec1c5718ce95e84d6bb207af97d8a91aeeaf06876a398bcd0"
+      url "https://github.com/DesmondSanctity/pinax/releases/download/v0.2.2/pinax_0.2.2_Linux_arm64.tar.gz"
+      sha256 "30bfc3a16639827db649dfef8d7cdcfb0e5fb3aacfd7f0b70980a0c2ecc93f02"
       define_method(:install) do
         bin.install "pinax"
       end
